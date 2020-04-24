@@ -1,0 +1,109 @@
+header .wrapper {
+  align-items: flex-start;
+  padding-top: 15px;
+}
+
+.header__logo {
+  width: 150px;
+}
+
+.header__nav {
+  flex-direction: column;
+  align-items: flex-end;
+  width: 200px;
+}
+
+.header__link {
+  margin: 5px 0;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.header__link:hover {
+  text-decoration: underline;
+}
+
+/*  */
+
+.main__question {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.question__item {
+  width: 100%;
+  margin: 5px 0;
+}
+
+.question__item label {
+  padding: 5px 0;
+}
+
+.flex-start .question__item {
+  margin-right: 0;
+}
+
+.sizes {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.sizes__item {
+  margin-top: 5px;
+}
+
+.calculation {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.calculation__btn {
+  align-self: center;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-right: 0;
+}
+
+.calculation__sum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+
+/*  */
+
+.feedback {
+  flex-direction: column;
+}
+
+.feedback__item {
+  margin-top: 15px;
+}
+
+.feedback__form {
+  flex-direction: column;
+}
+
+.feedback__email,
+.feedback__phone {
+  width: 70vw;
+}
+
+.feedback__submit {
+  align-self: flex-end;
+  margin-top: 10px;
+}
+
+.address__phone {
+  font-size: 14px;
+}
+
+.display_none {
+  display: inline;
+}

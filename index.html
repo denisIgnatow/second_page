@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="wrapper">
+      <a href="#"><img src="assets/img/logo.png" alt="logo" class="header__logo"></a>
+
+      <nav class="header__nav">
+        <a href="#" class="header__link">Наружная реклама</a>
+        <a href="#" class="header__link">Полиграфия</a>
+        <a href="#" class="header__link">Сувениры</a>
+        <a href="#" class="header__link">Контакты</a>
+        <span class="header__search">
+          <img src="assets/img/search.png">
+        </span>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <form action="#">
+        <h1 class="main__title">Рассчитайте стоимость букв прямо сейчас</h1>
+
+        <div class="main__item no-flex">
+          <div class="main__subtitle">
+            <div class="main__number">1</div>
+            <div class="main__text">Выберите материал</div>
+          </div>
+
+          <div class="main__question">
+            <div class="question__item">
+              <input type="radio" name="materials" id="material1">
+              <label for="material1">Баннерная ткань</label>
+            </div>
+
+            <div class="question__item">
+              <input type="radio" name="materials" id="material2">
+              <label for="material2">Пленка Orajent</label>
+            </div>
+
+            <div class="question__item">
+              <input type="radio" name="materials" id="material3">
+              <label for="material3">Холст выбеленный</label>
+            </div>
+
+            <div class="question__item">
+              <input type="radio" name="materials" id="material4">
+              <label for="material4">Фотобумага</label>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/img/hr.png" class="hr">
+
+        <div class="main__item no-flex">
+          <div class="main__subtitle">
+            <div class="main__number">2</div>
+            <div class="main__text">Выберите тип материала</div>
+          </div>
+
+          <div class="main__question flex-start">
+            <div class="question__item">
+              <input type="radio" name="materials-type" id="type1">
+              <label for="type1">Матовая (1.6 м)</label>
+            </div>
+
+            <div class="question__item">
+              <input type="radio" name="materials-type" id="type2">
+              <label for="type2">Матовая (1.0 м)</label>
+            </div>
+
+            <div class="question__item">
+              <input type="radio" name="materials-type" id="type3">
+              <label for="type3">Глянцевая</label>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/img/hr.png" class="hr">
+
+        <div class="main__item sizes__container">
+          <div class="main__subtitle">
+            <div class="main__number">3</div>
+            <div class="main__text">Задайте размер</div>
+          </div>
+
+          <div class="main__question sizes">
+            <div class="sizes__item">
+              <span class="sizes__text">Ширина, М.:</span>
+              <input type="text" class="sizes__input" value="50">
+            </div>
+            <div class="sizes__item">
+              <span class="sizes__text">Длина, М.:</span>
+              <input type="text" class="sizes__input" value="50">
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/img/hr.png" class="hr">
+
+        <div class="main__item no-flex">
+          <div class="main__subtitle">
+            <div class="main__number">4</div>
+            <div class="main__text">Выберите качество печати</div>
+          </div>
+
+          <div class="main__question flex-start">
+            <div class="question__item">
+              <input type="radio" name="quality" id="q1">
+              <label for="q1">720 dpi</label>
+            </div>
+
+            <div class="question__item">
+              <input type="radio" name="quality" id="q2">
+              <label for="q2">1440 dpi</label>
+            </div>
+          </div>
+        </div>
+
+        <img src="assets/img/hr.png" class="hr">
+
+        <div class="calculation">
+          <button class='calculation__btn'>Рассчитать</button>
+          <div class="calculation__sum">
+            <span>Итого:</span>
+            <input type="text" readonly>
+          </div>
+        </div>
+
+        <img src="assets/img/hr.png" class="hr">
+
+        <div class="feedback">
+          <div class="feedback__item">
+            <h3 class="feedback__subtitle">Введите Ваш e-mail:</h3>
+
+            <div class="feedback__form">
+              <input type="text" class="feedback__email">
+              <input type="submit" value="Отправить расчет" class="feedback__submit">
+            </div>
+          </div>
+          <div class="feedback__item">
+            <h3 class="feedback__subtitle">Введите Ваш номер телефона:</h3>
+
+            <div class="feedback__form">
+              <input type="text" class="feedback__phone">
+              <input type="submit" value="Перезвоните мне" class="feedback__submit">
+            </div>
+          </div>
+        </div>
+
+        <p class="info">Обращаем ваше внимание, что расчёт калькулятора носит исключительно информационный характер и ни
+          при каких условиях не является публичной офертой, определяемой положениями Статьи 437 ГК РФ.</p>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrapper">
+      <div class="company-name">
+        2018 <br class="display_none">Рекламно-производственная <br class="display_none">компания <br
+          class="display_none">«НАРУЖКА»
+      </div>
+
+      <address>
+        <div class="address__phone">8 (8142) 76-01-10</div>
+        <div class="address__email">Office@poster-ptz.ru</div>
+      </address>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
